@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1679523329 source:d:\햞ea de trabalho\estruturas de dados\trabalho final\jaccard\avl.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"EDlib.h"
+
+1679522184 d:\햞ea de trabalho\estruturas de dados\trabalho final\jaccard\edlib.h
+
+1679524925 source:d:\햞ea de trabalho\estruturas de dados\trabalho final\jaccard\leitura.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<time.h>
+	"EDlib.h"
+
+1679524969 source:d:\햞ea de trabalho\estruturas de dados\trabalho final\jaccard\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<time.h>
+	"EDlib.h"
+
+1679524926 source:d:\햞ea de trabalho\estruturas de dados\trabalho final\jaccard\rn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"EDlib.h"
+
