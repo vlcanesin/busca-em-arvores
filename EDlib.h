@@ -17,7 +17,6 @@ typedef struct nodoRN {    // Árvore Rubro Negra (RN)
     struct nodoRN *esq, *dir;
 } pNodoRN;
 
-
 // ========== AVL =========== //
 
 pNodoAVL* Inicializa_AVL();
@@ -66,13 +65,15 @@ pNodoRN* Insere_RN(pNodoRN *A, Dado info_nodo[], int *ok, int raiz, char origem,
 
 // ======== LEITURA ========= //
 
-pNodoAVL* Ler_Stopwords(pNodoAVL *SW, char path[]);
-// Lê as stopwords em <path>.txt e retorna a árvore gerada
-
-pNodoRN* Ler_TXT(pNodoRN *RN_atual, char path[], pNodoAVL* SW, char origem, int *tam_texto, int *tam_inter);
-// Lê as palavras do arquivo <path>.txt ignorando as stopwords em SW;
+void Ler_TXT(
+    pNodoRN** RN, pNodoAVL** SW,
+    char path[], char modo,
+    char origem, int *tam_texto, int *tam_inter
+);
+// Lê as palavras do arquivo <path>.txt;
+// Se modo é "S", salva palavras na árvore de stopwords; se modo é "P", salva na árvore de palavras;
 // Se origem é "A", não conta interseções. Se origem é "B", conta interseções;
 // Salva o número de palavras em tam_texto e o tamanho da interseção dos dois textos em tam_inter;
-// Retorna a árvore gerada.
+// Retorna a árvore gerada a partir das passagens por referência.
 
 #endif
