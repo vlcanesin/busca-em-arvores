@@ -42,10 +42,10 @@ int main(int argc, char *argv[]) {
         end = clock(); // Encerra a contagem do tempo
         float miliseconds = (float)(end - start) / CLOCKS_PER_SEC * 1000; // Calcula o tempo decorrido
 
-        printf("\n'%s': %d palavras distintas\n", argv[1], tam_textoA);
-        printf("'%s': %d palavras distintas\n", argv[2], tam_textoB);
-        printf("Intersec.: %d palavras\n", tam_inter);
-        printf("Jaccard = %.2f\n", (tam_textoA + tam_textoB > 0) ? (float)tam_inter/(tam_textoA + tam_textoB - tam_inter) : 1.00);
+        //printf("\n'%s': %d palavras distintas\n", argv[1], tam_textoA);
+        //printf("'%s': %d palavras distintas\n", argv[2], tam_textoB);
+        //printf("Intersec.: %d palavras\n", tam_inter);
+        printf("Jaccard = %.4f\n", (tam_textoA + tam_textoB > 0) ? (float)tam_inter/(tam_textoA + tam_textoB - tam_inter) : 1.00);
         printf("Tempo: %.2f ms\n", miliseconds);
 
         return 0;
