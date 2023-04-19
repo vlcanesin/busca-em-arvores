@@ -17,8 +17,11 @@ dos dois textos.
 &emsp;&emsp;O cálculo da similaridade é feito a partir do coeficiente de Jaccard, cuja fórmula está
 apresentada abaixo:
 </p>
+</div>
+
 ![image](https://user-images.githubusercontent.com/84688945/233153240-0a2e014e-da82-4778-8b3b-7af295bf822b.png)
 
+<div align="justify">
 <p>
 &emsp;&emsp;|𝑇𝑒𝑥𝑡𝑜A| e |𝑇𝑒𝑥𝑡𝑜B| são, respectivamente, o número de palavras distintas dos textos A
 e B, enquanto |𝑇𝑒𝑥𝑡𝑜A ∩ 𝑇𝑒𝑥𝑡𝑜B| é o número de palavras distintas que ocorrem em ambos os
@@ -61,7 +64,11 @@ altura das subárvores esquerda e direita não pode ser maior do que 1 (essa dif
 chamada de fator de balanceamento - FB). Tal condição exige que a árvore tenha altura
 ótima.
 </p>
+</div>
+
 ![image](https://user-images.githubusercontent.com/84688945/233153800-ce4cb9e6-d309-444f-90a2-a7c479ae1bfb.png)
+
+<div align="justify">
 <p>
 &emsp;&emsp;Por ter a menor altura possível, esse tipo de árvore é o melhor para a busca de um
 elemento. Porém, o recálculo da altura dos nós é muito custoso: sempre que um nó é
@@ -75,8 +82,11 @@ devem conter a mesma quantidade de nós pretos, e nenhum nó vermelho pode ter u
 vermelho. Esse tipo de balanceamento impede que o tamanho do maior ramo seja maior do
 que o dobro do menor ramo.
 </p>
+</div>
+
 ![image](https://user-images.githubusercontent.com/84688945/233154085-67b3b3ee-7873-4bed-9f40-5929ff06c633.png)
 
+<div align="justify">
 <p>
 &emsp;&emsp;A altura de uma árvore Rubro-Negra não é ótima (ainda que seja balanceada), o que
 torna a busca uma operação um pouco mais custosa comparada à AVL. Mas as operações
@@ -90,8 +100,11 @@ quando forem feitas mais inserções do que buscas na árvore.
 &emsp;&emsp;Durante a implementação do nosso programa, declaramos dois tipos de structs para
 representar os respectivos nós de cada árvore, mostradas a seguir:
 </p>
+</div>
+
 ![image](https://user-images.githubusercontent.com/84688945/233154307-495cb82f-5b6c-44dc-bff0-eb04e6e7a9ce.png)
 
+<div align="justify">
 <p>
 &emsp;&emsp;O algoritmo é executado em 3 passos. Primeiramente, é feita a leitura do arquivo
 que contém as stopwords e insere-se cada palavra em uma árvore AVL. Isso é feito para
